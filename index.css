@@ -1,0 +1,150 @@
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul {
+    background-color: black;
+    color: white;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.container {
+    min-height: 68vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 70vw;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg.jpg ');
+    background-size: cover;
+}
+
+nav ul li {
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li img {
+    margin: 0 8px;
+    width: 40px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: sticky;
+    height: 100px;
+    bottom: 0;
+
+}
+
+.icons {
+    color: white;
+    margin-top: 13px;
+
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#progressbar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songitem {
+    color: black;
+    background-color: white;
+    height: 35px;
+    display: flex;
+    width: 80%;
+    margin: 12px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 24px;
+
+}
+
+.songitem img {
+    border-radius: 50px;
+    width: 33px;
+    margin: 0 20px;
+}
+
+.timestamp {
+    margin: 0 23px
+}
+
+.songlistplay {
+    display: flex;
+    align-items: center;
+}
+
+.songlistplay i {
+    cursor: pointer;
+}
+
+.fa-solid {
+    padding-right: 12px;
+}
+
+.songinfo {
+
+    position: absolute;
+    left: 10vw;
+}
+
+#gif {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+#master {
+    font-size: 30px;
+}
+
+#previous {
+    font-size: 30px;
+
+}
+
+#next {
+    font-size: 30px;
+
+}
+
+
+@media (max-width: 414px){
+    .bottom{
+        height: 20vh;
+    }
+    .songitem{
+        height: 40px;
+        width: 90vw;
+        line-height: 12px;
+    }
+}
+@media (min-height:760px){
+    .bottom{
+        height: 20vh;
+    }}
+@media (max-width:290px){
+        .songitem{
+            height: 10vh;
+        }}
+    
